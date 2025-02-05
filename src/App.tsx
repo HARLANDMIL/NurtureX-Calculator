@@ -208,7 +208,7 @@ function App() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold text-gray-900 mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-blue-600">
-            AI ROI Calculator
+           Apex ROI Calculator
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Discover how AI can transform your business metrics and accelerate growth
@@ -510,6 +510,18 @@ function App() {
         </div>
       </div>
 
+      <footer className="mt-16 py-8 border-t border-gray-100">
+          <div className="text-center">
+            <p className="text-sm text-gray-500">
+              © {new Date().getFullYear()} Apex Nurture. All rights reserved.
+            </p>
+            <p className="text-xs text-gray-400 mt-2">
+              Transforming businesses through intelligent solutions
+            </p>
+          </div>
+        </footer>
+        
+
       {/* Email Modal */}
       {showEmailModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
@@ -547,10 +559,13 @@ function App() {
               </div>
             </form>
           </div>
+          
         </div>
+       
       )}
     </div>
   );
+  
 }
 
 export default App;
